@@ -82,7 +82,7 @@ describe('Registration:', function () {
 const rundomNumber_1_2 = () => Math.round(Math.random()*(2-1)+1).toString();
 describe('Authorization:', function () {
 
-  it('should be able to log in', async function () {
+  xit('should be able to log in', async function () {
 
     await browser.setWindowSize(1440, 960);
     await browser.url('/sign-in');
@@ -228,7 +228,7 @@ const rundomNumber_0_34 = () => Math.round(Math.random()*(34-0)+0).toString();
 
 describe('Change speciality/clinic in Profile:', function () {
 
-  xit('should be able to change speciality/clinic in Profile', async function () {
+  it('should be able to change speciality/clinic in Profile', async function () {
 
     await browser.setWindowSize(1440, 960);
     await browser.url('/sign-in');
@@ -302,7 +302,7 @@ const rundomNumber_0_17 = () => Math.round(Math.random()*(17-0)+0).toString();
 
 describe('Add a clinic:', function () {
 
-  it('should be able to add a clinic', async function () {
+  xit('should be able to add a clinic', async function () {
 
     await browser.setWindowSize(1440, 960);
     await browser.url('/sign-in');
@@ -343,9 +343,9 @@ await browser.waitUntil(
   { timeout: 5000 },
 );
 //ADD BUTTON
-const addButton = await $('button');
-await addInButton.waitForDisplayed({ timeout: 5000 });
-    await addInButton.click();
+const addButton = await $('button.styles_btn___s1BB.styles_without-border__3Vbp3 styles_primary-dark__1WnyR');
+await addButton.waitForDisplayed({ timeout: 5000 });
+    await addButton.click();
 
     const clinicnameField = await $('input[name="name"]');
     const clinicaddressField = await $('input[name="address"]');
