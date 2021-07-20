@@ -14,7 +14,7 @@ class Button extends BaseElement{
         await element.click();
     }
     async clickByText(text){
-        let element= await $(this.selector.replace(TEXT_TO_REPLACE, text))
+        let element= await $(this.selector.replace(TEXT_TO_REPLACE, text));
         await this.waitForVisible(element);
         await element.click();
 
