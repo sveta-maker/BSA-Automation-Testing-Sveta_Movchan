@@ -15,4 +15,4 @@ class Input extends BaseElement{
           await element.setValue(text);
     }
 }
-module.exports = {Input};
+module.exports = {Input}
